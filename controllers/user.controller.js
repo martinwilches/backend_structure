@@ -1,5 +1,6 @@
 import { registerService } from '../services/user.service.js'
 
+// logica de controlador encargada de recibir los datos enviados por el cliente para realizar el registro
 export async function register(req, res) {
     try {
         const user = await registerService(
